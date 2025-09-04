@@ -14,6 +14,7 @@ import ServicesPage from "./pages/ServicesPage";
 import DiscountPage from "./pages/DiscountPage";
 // import ChatbotPage from "./pages/ChatbotPage";
 import Loader from "./components/Loader";
+import TawkMessenger from "./components/TawkMessenger";
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           {/* Fallback route */}
           <Route path="*" element={<Navigate to={user ? "/dashboard" : "/login"} replace />} />
         </Routes>
+        <TawkMessenger />
      
       </div>
     </Router>
